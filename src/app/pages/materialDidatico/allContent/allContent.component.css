@@ -1,0 +1,10 @@
+.materialDiv {
+    margin-top: 108px;
+    height: fit-content;
+    padding-right: 42px;
+}
+
+.conteudoCards {
+    flex-wrap: wrap;
+    margin-bottom: 125px;
+}

@@ -1,0 +1,31 @@
+<div class="materialDidatico">
+    <material-header></material-header>
+    <main class="materialMain">
+        <img src="../../../assets/materialBanner.svg" alt="materialBanner" class="materialBanner" />
+
+        <div class="materialDiv">
+            <div class="buttonTextDiv">
+                <div class="materialTextDiv">
+                    <div class="semanaDiv"><span class="semanaSpan">Semana 06/02 até 28/02</span><span
+                            class="arrowLeftSpan">
+                            < </span><span class="arrowRightSpan">></span>
+                    </div>
+                    <h1 class="h1Text">Material didático</h1>
+                    <span class="spanText">Acesse suas últimas apresentações de aula.</span>
+                </div>
+                <button class="conteudoBtn" (click)="allContent()">Ver todo conteúdo</button>
+            </div>
+
+            <div class="conteudoCards">
+                <div class="card" *ngFor="let material of materials">
+                    <a href={{material.editor}} target="_blank">
+                        <img class="cardImg" src={{material.cover}} />
+                        <span class="cardTitle">{{material.title}}</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img src="../../../assets/materialVideo.svg" alt="materialVideo" class="materialVideo" />
+    </main>
+</div>

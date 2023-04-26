@@ -1,0 +1,28 @@
+<div class="loginPage">
+
+  <div class="loginDiv">
+    <img src="../assets/logo.svg" class="logo" />
+
+    <strong class="loginStrong">Olá, faça login em sua conta.</strong>
+
+    <form class="loginForm" [formGroup]="loginForm">
+
+      <div class="labelInputDiv">
+        <label [class.selected]="emailInputSelected">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Informe o e-mail" (focus)="emailInputSelected=true"
+          (blur)="emailInputSelected= false" formControlName="email" required>
+      </div>
+
+      <div class="labelInputDiv">
+        <label [class.selected]="senhaInputSelected">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Informe a senha"
+          (focus)="senhaInputSelected= true" (blur)="senhaInputSelected= false" formControlName="password" required>
+      </div>
+
+      <button type="button" class="button" (click)="loginHandler()" [class.spinner]="loading"
+        cLoadingButton>{{message}}</button>
+
+    </form>
+    <span class="error">{{errorMessage}}</span>
+  </div>
+</div>

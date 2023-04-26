@@ -1,0 +1,20 @@
+<div class="materialDidatico">
+    <material-header></material-header>
+    <div class="materialDiv">
+        <div class="buttonTextDiv">
+            <div class="materialTextDiv">
+                <h1 class="h1Text">Material didático</h1>
+                <span class="spanText">Acesse suas últimas apresentações de aula.</span>
+            </div>
+        </div>
+
+        <div class="conteudoCards">
+            <div class="card" *ngFor="let material of materials">
+                <a href={{material.editor}} target="_blank">
+                    <img class="cardImg" src={{material.cover}} />
+                    <span class="cardTitle">{{material.title}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

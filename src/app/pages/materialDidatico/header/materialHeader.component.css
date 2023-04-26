@@ -1,0 +1,16 @@
+.headerDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logoutBtn {
+    width: 254px;
+    height: 53px;
+    cursor: pointer;
+    position: relative;
+    top: -69px;
+    left: 265px;
+    background-color: transparent;
+    border: none;
+}

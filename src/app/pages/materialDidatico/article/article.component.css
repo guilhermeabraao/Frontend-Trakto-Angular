@@ -1,0 +1,50 @@
+.materialMain {
+    margin-top: 108px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    overflow-x: clip;
+}
+
+.materialDiv {
+    height: 519px;
+}
+
+.buttonTextDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.semanaDiv {
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.semanaSpan {
+    width: 195px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #7183A6;
+    background: #E4EBFB;
+    border-radius: 500px;
+}
+
+.conteudoBtn {
+    width: 180px;
+    height: 51px;
+    left: 1540px;
+    top: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4743FF;
+    border: 1px solid #4743FF;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
